@@ -1,0 +1,29 @@
+@import "mixins";
+
+.services {
+  padding: 104px 0;
+  background: $colorMainOne;
+  @include flaxRowCenter();
+  gap: calc($gapBlocks * 2);
+  flex-wrap: wrap;
+
+  &__box {
+    max-width: 320px;
+    text-align: center;
+    color: $colorlightest;
+
+    &-title {
+      margin-top: 25px;
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &-description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin widthSite() {
+  padding-left: calc(50% - $widthSite / 2);
+  padding-right: calc(50% - $widthSite / 2);
+}
+
+@mixin widthSiteEtc() {
+  padding-left: calc((50% - $widthSite / 2) - 20px);
+  padding-right: calc((50% - $widthSite / 2) - 20px);
+}
+
+@mixin flaxRowCenter() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flaxColCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

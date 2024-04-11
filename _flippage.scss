@@ -1,0 +1,48 @@
+@import "mixins";
+
+.flipping-pages-box {
+  @include flaxRowCenter;
+  gap: 16px;
+  border: 1px solid #ebebeb;
+  padding: 12px 16px;
+  border-radius: 2px;
+
+  &__left:hover {
+    cursor: pointer;
+    path {
+      fill: $colorMainTwo;
+    }
+  }
+
+  &__numpage {
+    word-spacing: 24px;
+  }
+
+  &__ul {
+    @include flaxRowCenter;
+    gap: 16px;
+  }
+
+  &__li:first-child .flipping-pages-box__link {
+    color: $colorMainTwo;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: $colorMainThird;
+  }
+
+  &__link:hover {
+    font-weight: 400;
+    color: $colorMainTwo;
+  }
+
+  &__right:hover {
+    cursor: pointer;
+    path {
+      fill: $colorMainTwo;
+    }
+  }
+}

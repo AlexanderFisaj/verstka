@@ -1,0 +1,103 @@
+@import "mixins";
+
+.description-product {
+  @include widthSite();
+
+  &__box {
+    margin-top: -64px;
+    margin-bottom: 128px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 250px;
+    padding-right: 250px;
+    background-color: $colorlightest;
+    border: 1px solid #eaeaea;
+    @include flaxColCenter();
+    text-align: center;
+  }
+  &__prev {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $colorMainTwo;
+  }
+
+  &__title {
+    padding-bottom: 48px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #4d4d4d;
+  }
+
+  &__text {
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #5e5e5e;
+  }
+
+  &__cost {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #ef5b70;
+  }
+
+  &__filter {
+    padding-bottom: 48px;
+    @include flaxRowCenter();
+    gap: 24px;
+
+    &-link {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #6f6e6e;
+    }
+    &-link:hover {
+      cursor: pointer;
+      color: $colorMainTwo;
+      path {
+        fill: $colorMainTwo;
+      }
+    }
+  }
+
+  &__fiter-text {
+    margin-right: 9px;
+  }
+
+  &__button {
+    width: 212px;
+    height: 48px;
+    @include flaxRowCenter();
+    gap: 20px;
+    border: 1px solid #ff6a6a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $colorMainTwo;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    background-color: $colorMainTwo;
+    color: $colorlightest;
+    path {
+      fill: $colorlightest;
+    }
+  }
+}
+
+.little-line {
+  margin: 12px 0;
+  width: 63px;
+  border-top: 3px solid #ef5b70;
+}
+
+.big-line {
+  margin: 64px 0;
+  width: 642px;
+  border-top: 1px solid #eaeaea;
+}

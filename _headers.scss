@@ -1,0 +1,9 @@
+.header-section{
+    @include widthSite();
+    padding-top: 59px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    color: $colorMainTwo;
+    font-weight: 400;
+    background-color: #f8f3f4;
+}

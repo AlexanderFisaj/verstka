@@ -1,0 +1,196 @@
+.cards-content {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  @include widthSite();
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 652px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #eaeaea;
+    box-shadow: 17px 19px 24px 0px #00000021;
+
+    &__image {
+      max-width: 262px;
+      max-height: 306px;
+    }
+
+    &__description {
+      padding: 22px 31px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      &__title {
+        padding-bottom: 42px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $colorMainOne;
+      }
+    }
+
+    &__box {
+      display: flex;
+      gap: 8px;
+      &__name {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #575757;
+      }
+
+      &__value {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #6f6e6e;
+      }
+
+      &__form {
+        display: flex;
+        gap: 24px;
+      }
+    }
+
+    &__cross-close {
+      padding: 28px 22px;
+
+      &__link:hover {
+        cursor: pointer;
+        path {
+          fill: $colorMainTwo;
+        }
+      }
+    }
+  }
+  &__buttons-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    padding: 16px 41px;
+    border: 1px solid #a4a4a4;
+  }
+  &__button:hover {
+    cursor: pointer;
+    border: 1px solid $colorMainTwo;
+    background-color: $colorMainTwo;
+    color: $colorlightest;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $colorMainTwo;
+    outline: none;
+
+    &__title {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: $colorMainOne;
+    }
+  }
+
+  &__form input[type="text"] {
+    padding: 13px 17px 16px 17px;
+    border: 1px solid #a4a4a4;
+    width: $thirdSite;
+    height: 45px;
+    padding: 16px;
+    text-align: left;
+    color: $colorMainOne;
+  }
+
+  &__form input[type="submit"] {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: center;
+    border: 1px solid #a4a4a4;
+    color: #4a4a4a;
+    padding: 12px;
+    max-width: 102px;
+  }
+
+  &__form input[type="submit"]:hover {
+    cursor: pointer;
+    border-color: $colorMainTwo;
+    color: $colorlightest;
+    background-color: $colorMainTwo;
+  }
+
+  &__making-order {
+    width: $thirdSite;
+    padding: 40px;
+    background-color: #f5f3f3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 214px;
+
+    &__sub {
+      display: flex;
+      flex-direction: row;
+      text-wrap: nowrap;
+      justify-content: flex-end;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+      color: #4a4a4a;
+      text-align: right;
+    }
+
+    &__grand {
+      display: flex;
+      flex-direction: row;
+      text-wrap: nowrap;
+      justify-content: flex-end;
+      gap: 20px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19px;
+      color: $colorMainOne;
+      text-align: right;
+    }
+
+    &__summa {
+      width: 60px;
+    }
+
+    &__line {
+      color: #e2e2e2;
+      margin-top: 9px;
+      margin-bottom: 5px;
+    }
+
+    &__checkout {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
+
+.forma {
+  width: 44px;
+  text-align: right;
+  outline: none;
+  text-align: center;
+}
