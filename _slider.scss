@@ -1,0 +1,17 @@
+.slider {
+  padding-top: 16px;
+  padding-bottom: 64px;
+  background-color: #f7f7f7;
+  border: 0.5px solid #eaeaea;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("./img/prev.svg");
+}
+.carousel-control-next-icon {
+  background-image: url("./img/next.svg");
+}

@@ -1,0 +1,26 @@
+@import "mixins";
+
+.header {
+  background: $colorMainOne;
+  &__content {
+    @include widthSite();
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__content-left {
+    @include flaxRowCenter();
+    gap: 40px;
+  }
+
+  &__content-right {    
+    @include flaxRowCenter();
+    gap: 36px;
+  }
+}

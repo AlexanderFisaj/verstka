@@ -1,0 +1,95 @@
+@import "mixins";
+
+.fetured-items {
+  @include flaxColCenter();
+  @include widthSite();
+  padding-bottom: 110px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    color: $colorMainOne;
+  }
+
+  &__description {
+    margin-bottom: 48px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    color: $colorMainThird;
+  }
+
+  &__products {
+    @include flaxRowCenter();
+    flex-wrap: wrap;
+    gap: $gapBlocks;
+    padding-bottom: 64px;
+  }
+  &__button {
+    font-size: 16px;
+    font-weight: 400;
+    color: #f26376;
+    border: 1px solid #ff6a6a;
+    padding: 15px 39px 14px;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    color: $colorlightest;
+    background: linear-gradient(0deg, $colorMainTwo, $colorMainTwo),
+      linear-gradient(0deg, $colorMainTwo, $colorMainTwo);
+    transition: all 0.3s ease;
+  }
+}
+
+.product-card {
+  width: $thirdSite;
+  background-color: #f8f8f8;
+  position: relative;
+
+  &__basket-put {
+    position: absolute;
+    top: calc($thirdSite / 2);
+    left: calc($hightCard / 3);
+    display: none;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__img:hover {
+    cursor: pointer;
+    filter: brightness(30%);
+    transition: all 0.3s ease;
+  }
+
+  &__text {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-title {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $colorDarkest;
+    }
+    &-description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #5d5d5d;
+    }
+    &-price {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: $colorMainTwo;
+    }
+  }
+}

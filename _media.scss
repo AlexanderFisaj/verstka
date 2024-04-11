@@ -1,0 +1,473 @@
+@import "mixins";
+
+@media (max-width: 1062px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .breadcrumbs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .filters-sorts {
+    padding-top: 24px;
+  }
+  .top-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .product-group {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__bottom {
+      grid-column: span 1;
+      height: 214px;
+    }
+  }
+
+  .fetured-items {
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 64px;
+  }
+  .flipping-pages-box {
+    margin-bottom: 63px;
+  }
+
+  .cards-content {
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__left {
+      width: 752px;
+      justify-content: center;
+    }
+
+    &__right {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    &__form {
+      width: $thirdSite;
+    }
+
+    &__making-order {
+      width: $thirdSite;
+    }
+  }
+  .registration {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .description-product {
+    &__box {
+      margin-top: 0;
+      padding: 64px 100px;
+    }
+  }
+  .desctop {
+    display: none;
+  }
+
+  .footer {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .main-content {
+    padding: 16px 0;
+  }
+  .main-content .main-content__top .image {
+    width: 386px;
+  }
+  .breadcrumbs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .title-box {
+    &__top {
+      font-size: 44px;
+    }
+    &__bottom-left {
+      font-size: 24px;
+    }
+    &__bottom-right {
+      font-size: 24px;
+    }
+  }
+  .top-content {
+    &__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .bottom-brand {
+    font-size: 24px;
+  }
+  .product-group {
+    padding: 16px;
+  }
+
+  .rectangle-box {
+    &__title {
+      min-width: 232px;
+      min-height: 167px;
+    }
+  }
+
+  .percent {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+  }
+  .name {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0em;
+  }
+
+  .cards-content {
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: center;
+    align-items: center;
+    &__buttons-box {
+      padding-top: 22px;
+    }
+    &__making-order {
+      margin-top: 16px;
+    }
+  }
+
+  .fetured-items {
+    padding: 18px 0 0 0;
+    margin-top: 0;
+    &__products {
+      gap: 16px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .product-group {
+    &__top {
+      grid-gap: 19px;
+      padding-bottom: $gapBlocks;
+      &_left {
+        min-height: 168px;
+      }
+
+      &_center {
+        min-height: 168px;
+      }
+
+      &_right {
+        min-height: 168px;
+      }
+
+      &_bottom {
+        grid-column: span 3;
+        min-height: 116px;
+      }
+    }
+  }
+
+  .loyalty {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .subscribe {
+    padding-top: 64px;
+    flex-direction: column;
+    gap: 48px;
+    &-text {
+      font-size: 20px;
+    }
+    &__description {
+      padding-bottom: 28px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .main-content {
+    &__top .image {
+      display: none;
+    }
+  }
+
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .bottom-brand {
+    font-size: 20px;
+  }
+
+  .top-content {
+    padding: 16px;
+    &__right {
+      margin: 0;
+      padding-bottom: 0;
+      height: 363px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .breadcrumbs {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .filters {
+    &-sorts {
+      max-width: 100%;
+      padding: 24px 8px;
+      gap: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__filter {
+      width: calc(100vw - 16px);
+      padding: 0;
+      &-content {
+        padding: 8px;
+      }
+      &[open] {
+        z-index: 5;
+      }
+    }
+    &__summary {
+      svg {
+        width: 38px;
+        height: 25px;
+      }
+    }
+    &__heading {
+      display: none;
+    }
+  }
+  .sort {
+    z-index: 4;
+    gap: 23px;
+    &__heading {
+      font-size: 12px;
+    }
+    &__summary {
+      gap: 9px;
+    }
+  }
+
+  .flipping-pages-box {
+    margin-bottom: 0;
+  }
+
+  .slider {
+    padding: 85px 0;
+  }
+  .product-group {
+    &__top {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding-bottom: 0;
+    }
+  }
+
+  .fetured-items {
+    margin-top: 64px;
+    margin-bottom: 24px;
+    &__products {
+      gap: 16px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .description-product {
+    &__box {
+      padding: 64px 24px;
+      margin-bottom: 0;
+    }
+    &__title {
+      padding-bottom: 32px;
+    }
+    &__filter {
+      &-link {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    &__fiter-text {
+      margin-right: 10px;
+    }
+  }
+
+  .big-line {
+    margin-top: 32px;
+    margin-bottom: 49px;
+    width: 175px;
+  }
+
+  .brandname-box {
+    height: 66px;
+  }
+
+  .title-box {
+    &__top {
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &__bottom {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .cards-content {
+    padding-top: 40px;
+    padding-bottom: 96px;
+    &__left {
+      width: 358px;
+    }
+
+    &__card {
+      &__image {
+        max-height: 188px;
+      }
+
+      &__box {
+        &__name {
+          font-size: 14px;
+          line-height: 16.8px;
+        }
+        &__value {
+          font-size: 14px;
+          line-height: 16.8px;
+          .forma {
+            width: 24px;
+            height: 16px;
+          }
+        }
+      }
+
+      &__description {
+        padding: 14px 16px;
+        &__title {
+          font-size: 16px;
+          line-height: 19.2px;
+          padding-bottom: 26px;
+        }
+      }
+
+      &__cross-close {
+        padding: 10px 10px;
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    &__buttons-box {
+      gap: 9px;
+    }
+
+    &__button {
+      width: 175px;
+      height: 33px;
+      padding: 9px;
+      font-size: 12px;
+      line-height: 14.4px;
+      text-align: center;
+      &_checkout {
+        width: 100%;
+        height: 50px;
+        padding-top: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: center;
+      }
+    }
+
+    &__right {
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    &__form input[type="submit"] {
+      margin-top: 4px;
+    }
+
+    &__making-order {
+      padding: 42px;
+    }
+  }
+
+  .registration {
+    max-width: 358px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .loyalty {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .services {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    gap: 48px;
+  }
+
+  .subscribe {
+    padding: 64px 16px 110px;
+
+    &-text {
+      margin-bottom: 60px;
+    }
+
+    &__description {
+      padding-bottom: 22px;
+    }
+  }
+
+  .mobile-view {
+    display: none;
+  }
+  .footer {
+    padding: 43px 16px 24px;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+}

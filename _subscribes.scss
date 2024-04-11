@@ -1,0 +1,88 @@
+@import "mixins";
+
+.subscribe {
+  padding-top: 97px;
+  padding-bottom: 110px;
+  background: url(./img/subscribe_bg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__left {
+    max-width: 359px;
+    text-align: center;
+  }
+
+  &__foto {
+    margin-bottom: 30px;
+  }
+  &__right {
+    text-align: center;
+  }
+  &__text {
+    color: $colorMainOne;
+  }
+
+  &__text .italic {
+    font-style: italic;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+
+  &__description {
+    padding-bottom: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+  }
+
+  &__email {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &-form {
+      @include flaxRowCenter();
+      flex-wrap: nowrap;
+    }
+
+    &-email {
+      width: 256px;
+      height: 49px;
+      padding-left: 22px;
+      border: none;
+      background-color: #e1e1e1;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      border-radius: 25px 0 0 25px;
+    }
+    &-button {
+      width: 100px;
+      height: 49px;
+      border: none;
+      background-color: $colorMainTwo;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+      border-radius: 0 25px 25px 0;
+    }
+    &-button:hover {
+      cursor: pointer;
+      color: $colorDarkest;
+    }
+  }
+}
